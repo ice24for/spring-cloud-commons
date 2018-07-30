@@ -29,6 +29,10 @@ import java.lang.annotation.Target;
  * Annotation to mark a RestTemplate bean to be configured to use a LoadBalancerClient
  * @author Spencer Gibb
  */
+/**
+白初心iceu 这个注解 的意思是 将一个restTemplate 标志为 底层使用LoadBalancerClient来执行实际的http请求
+  支持负载均衡
+*/
 @Target({ ElementType.FIELD, ElementType.PARAMETER, ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
